@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz cumpleaños Lore!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://i.imgur.com/pA1d6g9.jpg') center/cover no-repeat fixed, #fbeaea;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      color: #b94d6f;
+      font-size: 3rem;
+      margin-top: 2rem;
+    }
+
+    .collage {
+      position: relative;
+      width: 100%;
+      max-width: 1300px;
+      margin: 3rem auto;
+      height: 1500px;
+    }
+
+    .collage img {
+      position: absolute;
+      object-fit: cover;
+      border: 8px solid #fff;
+      box-shadow: 4px 6px 20px rgba(0,0,0,0.15);
+      border-radius: 12px;
+    }
+
+    .photo1 { width: 250px; top: 100px; left: 100px; transform: rotate(-5deg); }
+    .photo2 { width: 200px; top: 350px; left: 400px; transform: rotate(3deg); }
+    .photo3 { width: 220px; top: 600px; left: 150px; transform: rotate(-7deg); }
+    .photo4 { width: 270px; top: 850px; left: 600px; transform: rotate(6deg); }
+    .photo5 { width: 240px; top: 200px; left: 700px; transform: rotate(-4deg); }
+    .photo6 { width: 190px; top: 500px; left: 900px; transform: rotate(8deg); }
+    .photo7 { width: 210px; top: 1050px; left: 300px; transform: rotate(-6deg); }
+    .photo8 { width: 230px; top: 1200px; left: 800px; transform: rotate(4deg); }
+
+    .tape {
+      position: absolute;
+      width: 60px;
+      height: 25px;
+      background: #f9d6e2;
+      transform: rotate(-15deg);
+      z-index: 2;
+    }
+
+    .tape1 { top: 90px; left: 110px; }
+    .tape2 { top: 340px; left: 420px; }
+    .tape3 { top: 590px; left: 160px; }
+    .tape4 { top: 840px; left: 620px; }
+
+    .card-button {
+      display: block;
+      margin: 3rem auto;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background-color: #f7a8c4;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .letter-container {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .letter {
+      background: #fff;
+      padding: 2rem;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+      transform: scale(0.8);
+      animation: openLetter 0.5s forwards;
+    }
+
+    @keyframes openLetter {
+      to { transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Feliz cumpleaños Lore!</h1>
+
+  <div class="collage">
+    <div class="tape tape1"></div>
+    <div class="tape tape2"></div>
+    <div class="tape tape3"></div>
+    <div class="tape tape4"></div>
+
+    <img src="images/2C06006F-11ED-49EA-93C2-62D6359457F4 - Editado.png" class="photo1" />
+    <img src="images/2CA526B4-2543-4482-B6CF-5576B8A8364E_1_102_o - Editado.png" class="photo2" />
+    <img src="images/7D39DE5B-F972-4BE2-A59F-0AB03271C6F0_1_102_o - Editado.png" class="photo3" />
+    <img src="images/5217EB09-7E59-45E7-A624-BD949DD34DD1_1_102_o - Editado.png" class="photo4" />
+    <img src="images/2C06006F-11ED-49EA-93C2-62D6359457F4_4_5005_c-removebg-preview.png" class="photo5" />
+    <img src="images/131668AD-6C3D-4162-BBF4-C5240ED24B90 - Editado.png" class="photo6" />
+    <img src="images/68E84816-701E-427B-93B0-B5694B6897FD_1_105_c - Editado.png" class="photo7" />
+    <img src="images/AE23776D-A179-465F-9A6D-9BB3EA6F5494_1_102_o - Editado.png" class="photo8" />
+  </div>
+
+  <button class="card-button" onclick="document.querySelector('.letter-container').style.display='flex'">
+    Abrir carta 💌
+  </button>
+
+  <div class="letter-container" onclick="this.style.display='none'">
+    <div class="letter" onclick="event.stopPropagation()">
+      <p><strong>Lore,</strong></p>
+      <p>Han pasado 25 años desde que naciste y no puedo haber estado más agradecido con el universo de que eso sucediera, no solo eso sino que el poder compartir un cachito de esos 25 años conmigo es un gran privilegio el cual me hace feliz todos los días y me hace sentir demasiado afortunado.</p>
+      <p>Hoy es tu día y poder estar contigo en este día tan especial es un verdadero regalo.</p>
+      <p><strong>Felices 25, te amo como no tienes idea.</strong><br>– MigueL</p>
+    </div>
+  </div>
+</body>
+</html>
