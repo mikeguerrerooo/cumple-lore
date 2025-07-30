@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feliz cumpleaños Lore!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -18,46 +19,53 @@
       color: #b94d6f;
       font-size: 3rem;
       margin-top: 2rem;
+      font-family: 'Amatic SC', cursive;
+      letter-spacing: 2px;
     }
 
     .collage {
       position: relative;
-      width: 100%;
-      max-width: 1300px;
-      margin: 3rem auto;
-      height: 1500px;
+      width: 90vw;
+      height: 80vh;
+      margin: 2vh auto 0 auto;
+      max-width: 1200px;
+      max-height: 90vh;
+      overflow: hidden;
     }
 
     .collage img {
       position: absolute;
-      object-fit: cover;
-      border: 8px solid #fff;
-      box-shadow: 4px 6px 20px rgba(0,0,0,0.15);
-      border-radius: 12px;
+      object-fit: contain;
+      z-index: 1;
+      transition: transform 0.2s;
+      max-width: 18vw;
+      max-height: 25vh;
+      width: auto;
+      height: auto;
     }
 
-    .photo1 { width: 250px; top: 100px; left: 100px; transform: rotate(-5deg); }
-    .photo2 { width: 200px; top: 350px; left: 400px; transform: rotate(3deg); }
-    .photo3 { width: 220px; top: 600px; left: 150px; transform: rotate(-7deg); }
-    .photo4 { width: 270px; top: 850px; left: 600px; transform: rotate(6deg); }
-    .photo5 { width: 240px; top: 200px; left: 700px; transform: rotate(-4deg); }
-    .photo6 { width: 190px; top: 500px; left: 900px; transform: rotate(8deg); }
-    .photo7 { width: 210px; top: 1050px; left: 300px; transform: rotate(-6deg); }
-    .photo8 { width: 230px; top: 1200px; left: 800px; transform: rotate(4deg); }
+    /* Row 1 */
+    .photo1  { top: 4vh; left: 1vw; transform: rotate(-5deg); }
+    .photo2  { top: 2vh; left: 13vw; transform: rotate(3deg); }
+    .photo3  { top: 5vh; left: 25vw; transform: rotate(-4deg); }
+    .photo4  { top: 3vh; left: 37vw; transform: rotate(6deg); }
+    .photo5  { top: 6vh; left: 49vw; transform: rotate(-3deg); }
+    .photo6  { top: 2vh; left: 61vw; transform: rotate(4deg); }
+    /* Row 2 */
+    .photo7  { top: 30vh; left: 7vw; transform: rotate(-6deg); }
+    .photo8  { top: 28vh; left: 19vw; transform: rotate(5deg); }
+    .photo9  { top: 32vh; left: 31vw; transform: rotate(-4deg); }
+    .photo10 { top: 29vh; left: 43vw; transform: rotate(7deg); }
+    .photo11 { top: 31vh; left: 55vw; transform: rotate(-5deg); }
+    .photo12 { top: 27vh; left: 67vw; transform: rotate(4deg); }
+    /* Row 3 */
+    .photo13 { top: 56vh; left: 10vw; transform: rotate(-4deg); }
+    .photo14 { top: 54vh; left: 22vw; transform: rotate(6deg); }
+    .photo15 { top: 58vh; left: 34vw; transform: rotate(-5deg); }
+    .photo16 { top: 55vh; left: 46vw; transform: rotate(5deg); }
+    .photo17 { top: 57vh; left: 58vw; transform: rotate(-6deg); }
 
-    .tape {
-      position: absolute;
-      width: 60px;
-      height: 25px;
-      background: #f9d6e2;
-      transform: rotate(-15deg);
-      z-index: 2;
-    }
 
-    .tape1 { top: 90px; left: 110px; }
-    .tape2 { top: 340px; left: 420px; }
-    .tape3 { top: 590px; left: 160px; }
-    .tape4 { top: 840px; left: 620px; }
 
     .card-button {
       display: block;
@@ -101,10 +109,7 @@
   <h1>Feliz cumpleaños Lore!</h1>
 
   <div class="collage">
-    <div class="tape tape1"></div>
-    <div class="tape tape2"></div>
-    <div class="tape tape3"></div>
-    <div class="tape tape4"></div>
+
 
     <img src="images/2C06006F-11ED-49EA-93C2-62D6359457F4 - Editado.png" class="photo1" />
     <img src="images/2CA526B4-2543-4482-B6CF-5576B8A8364E_1_102_o - Editado.png" class="photo2" />
@@ -114,6 +119,15 @@
     <img src="images/131668AD-6C3D-4162-BBF4-C5240ED24B90 - Editado.png" class="photo6" />
     <img src="images/68E84816-701E-427B-93B0-B5694B6897FD_1_105_c - Editado.png" class="photo7" />
     <img src="images/AE23776D-A179-465F-9A6D-9BB3EA6F5494_1_102_o - Editado.png" class="photo8" />
+    <img src="images/20313967-FBF5-4735-907C-16BDA141634A_1_105_c - Editado.png" class="photo9" />
+    <img src="images/22D05A4F-E021-495B-BF97-9B7BB72457C4_1_102_o - Editado.png" class="photo10" />
+    <img src="images/54524631-CB36-4A64-80E2-CA1FC3CD1F29_1_105_c - Editado.png" class="photo11" />
+    <img src="images/63E6720F-63DB-4652-A311-71A50DE83ACD_1_105_c - Editado.png" class="photo12" />
+    <img src="images/98B51FE8-B93A-4A35-8E09-2DC46F2CB8C6 - Editado.png" class="photo13" />
+    <img src="images/C71B33B9-B1C6-4ABE-8AAE-A3781D8A2632_1_102_o - Editado.png" class="photo14" />
+    <img src="images/D87331B5-F7C6-46C4-ADF5-1501609EA401_1_102_a - Editado.png" class="photo15" />
+    <img src="images/E1E7058B-65A9-48C7-AC4E-966832093716_1_105_c - Editado.png" class="photo16" />
+    <img src="images/F87768E6-37C0-42DC-BEE4-2D2B3A750C69 - Editado.png" class="photo17" />
   </div>
 
   <button class="card-button" onclick="document.querySelector('.letter-container').style.display='flex'">
@@ -129,4 +143,14 @@
     </div>
   </div>
 </body>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    window.onload = function() {
+      confetti({
+        particleCount: 200,
+        spread: 90,
+        origin: { y: 0.6 }
+      });
+    };
+  </script>
 </html>
